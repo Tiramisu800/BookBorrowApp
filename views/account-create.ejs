@@ -1,0 +1,45 @@
+<%- include("partials/header"); -%>
+<%- include("partials/navigation-librarian"); -%>
+
+<div class="jumbotron jumbotron2">
+<div class="dark-container p-5">
+<h2 class="text-center text-light display-4">Account</h2>
+
+<form action="/account-create" method="post">
+<div class="text-center ml-auto mr-auto">
+    <h6 class="error"><%=error%></h6>
+    <div class="row form-group">
+        <div class="col-6 text-left">
+            <label>First Name: </label>
+            <input class="form-control" name="firstName" placeholder="first name" type="text" />
+        </div>
+        <div class="col-6 text-left">
+            <label>Last Name: </label>
+            <input class="form-control" name="lastName" placeholder="last name" type="text" />
+        </div>
+    </div>
+    <div class="form-group text-left">
+        <label>Telegram: </label>
+        <input class="form-control" name="telegram" placeholder="telegram" type="text" />
+    </div>
+    <div class="form-group text-left">
+        <label>Username: </label>
+        <input class="form-control" name="username" placeholder="username" type="text" />
+    </div>
+    <div class="form-group text-left">
+        <label>Password: </label>
+        <input class="form-control" name="password" placeholder="password" type="text" />
+    </div>
+    <div class="form-group text-left">
+        <label>Role: </label>
+        <input class="form-control" name="role" placeholder="role" type="text" />
+    </div>
+    <div class="form-group">
+        <button class="btn btn-md btn-outline-light" type="submit">Confirm</button>
+    </div>
+</div>
+</form>
+</div>
+</div>
+
+<%- include("partials/footer"); -%>

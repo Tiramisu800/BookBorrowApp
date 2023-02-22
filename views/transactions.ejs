@@ -1,0 +1,44 @@
+<%- include("partials/header"); -%>
+<%- include("partials/navigation-librarian"); -%>
+
+<div class="bg-green p-4">
+    <form action="/transactions" method="post">
+        <div class="row input-group w-75 pl-5 pr-5 mx-auto">
+            <input class="col-10 form-control" name="keyword" type="text"/>
+            <button class="col-2 btn btn-outline-light" name="submit" type="submit">Search</button>
+        </div>
+    </form>
+</div>
+
+<div class="white-container">
+    <div >
+        <% if(results.length === 0) { %>
+            <div class="mx-auto w-75 p-5">
+                <h3>No transactions found.</h3>
+            </div>
+        <% } else {%>
+        <% for(var i = 0; i < results.length; i++){ %>
+        <%      var transaction = results[i];    %>
+                <div class="row mx-auto w-75 p-5">
+                    <div class="col-7">
+                        <h4><%=transaction.book.title%></h4>
+                        <h4>by <%=transaction.book.author%></h4>
+                        <h4>ISBN: <%=transaction.book.isbn%></h4>
+                    </div>
+                    <div class="col-5" >
+                        <h4>Borrowed by: <%=transaction.user.username%></h4>
+                        <h4>Borrowed by: <%=transaction.user.telegram%></h4>
+                        <h4>Borrowed on: <%=transaction.borrowDate%></h4>
+                    <% if(transaction.isReturned === false) {  %>
+                        <h4 class="error">Not Returned</h4>
+                <% } else { %>
+                        <h4>Returned on: <%=transaction.returnDate%></h4>
+                <% } %>
+                    </div>
+                </div>
+                <hr/>
+        <% }} %>
+    </div>
+</div>
+
+<%- include("partials/footer"); -%>

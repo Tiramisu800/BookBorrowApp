@@ -1,0 +1,151 @@
+html, body{
+  background-color: #4D4755;
+}
+
+input[type=text], input[type=password]{
+  border-radius: 5px;
+  font-size: 21px;
+}
+a{
+  color: #91B3BC;
+}
+
+a:hover{
+  color: #7B90B3
+}
+
+nav a{
+  color: whitesmoke;
+}
+
+nav a:hover{
+  color: #d09bad;
+}
+
+footer{
+  max-height: 100px;
+}
+
+/* containers */
+.jumbotron1{
+  background-image: url("/images/library1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+
+}
+
+.words{
+  background-image: url("/images/library3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+
+}
+.jumbotron1-inner{
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.jumbotron2{
+  background-image: url("/images/library2.jpg");
+  color: black;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron2-inner{
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.jumbotron-brown{
+  background-color: #D6AC97;
+}
+
+.white-container{
+  background-color: whitesmoke;
+  min-height: 770px;
+}
+
+.white-container-small{
+  background-color: whitesmoke;
+  min-height: 300px;
+}
+
+.dark-container{
+  background-color: #423a3a;
+  border-radius: 10px;
+  margin: auto;
+  max-height: 700px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 10px 10px 50px 10px;
+  width: 30%;
+  opacity: 0.88;
+}
+
+.dark-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.dark-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(241, 225, 225, 0.3);
+  border-radius: 10px;
+}
+
+.dark-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(241, 239, 239, 0.5);
+}
+
+/* Table */
+.table-item{
+  padding: 20px;
+}
+
+.table-row{
+  padding: 20px;
+}
+
+/* Colors */
+.error{
+  color: red
+}
+
+.bg-dark-brown{
+  background-color: #4D4755;
+  color: white;
+}
+
+.btn-dark-brown{
+  background-color: #4D4755;
+  color: white;
+}
+
+.bg-light-brown{
+  background-color: #D6AC97;
+}
+
+.bg-blue{
+  background-color: #7B90B3;
+  color: white;
+}
+
+.bg-green{
+  background-color: #91B3BC;
+  color: black;
+}
+
+.color-blue{
+  color: #7B90B3;
+}
+
+.color-green{
+  color: #91B3BC;
+}
+
+.color-light-brown{
+  color: #D6AC97;
+}
