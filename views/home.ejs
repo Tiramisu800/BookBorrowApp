@@ -5,32 +5,31 @@
 
 <div class="white-container-small">
     <% if(role === "patron") { %>
-    <div class="words mx-auto display-3 text-white shadow-lg p-3 font-weight-bold">
-        <h1>Welcome!</h1>
-        <p>Use the search bar above to search for books.</p>
-        <p>Or use the navigation to view your account information and transaction history.</p>
-    </div>
+        <div class="words mx-auto display-3 text-white shadow-lg p-3 font-weight-bold">
+            <h1>Welcome!</h1>
+
+        </div>
     <% } %>
     <% if(role === "librarian" || role === "admin") { %>
-    <div class="p-5 row w-75 mx-auto">    
-        <div class="col-4">
-            <h4>Books</h4>
-            <h5><a href="/book-create">Add Book</a></h5>
-            <h5><a href="/search">View Books</a></h5>
-        </div>
-        <div class="col-4">
-            <h4>Users</h4>
-            <% if(role === "admin") { %> 
-            <h5><a href="/account-create">Add User</a></h5>
-            <% } %>
-            <h5><a href="/users">View Users</a></h5>
-        </div>
-        <div class="col-4">
-            <h4>Transactions</h4>
-            <h5><a href="/transactions">View Transactions</a></h5>
-        </div>
-    </div> <% } %>
-        <%- include("partials/search-books"); -%>
+        <div class="p-5 row w-75 mx-auto">
+            <div class="col-4">
+                <h4>Books</h4>
+                <h5><a href="/book-create">Add Book</a></h5>
+                <h5><a href="/search">View Books</a></h5>
+            </div>
+            <div class="col-4">
+                <h4>Users</h4>
+                <% if(role === "admin") { %>
+                    <h5><a href="/account-create">Add User</a></h5>
+                <% } %>
+                <h5><a href="/users">View Users</a></h5>
+            </div>
+            <div class="col-4">
+                <h4>Transactions</h4>
+                <h5><a href="/transactions">View Transactions</a></h5>
+            </div>
+        </div> <% } %>
+    <%- include("partials/search-books"); -%>
 </div>
 
 

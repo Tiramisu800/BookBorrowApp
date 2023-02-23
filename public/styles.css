@@ -1,9 +1,9 @@
 html, body{
-  background-color: #4D4755;
+  background-color: whitesmoke;
 }
 
 input[type=text], input[type=password]{
-  border-radius: 5px;
+  /**border-radius: 5px;**/
   font-size: 21px;
 }
 a{
@@ -28,7 +28,7 @@ footer{
 
 /* containers */
 .jumbotron1{
-  background-image: url("/images/library1.jpg");
+  background-image: url("/images/search.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 900px;
@@ -36,7 +36,7 @@ footer{
 }
 
 .words{
-  background-image: url("/images/library3.jpg");
+  background-image: url("/images/main.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 900px;
@@ -48,8 +48,8 @@ footer{
 }
 
 .jumbotron2{
-  background-image: url("/images/library2.jpg");
-  color: black;
+  background-image: url("/images/palms.jpg");
+  background-color: white;
   height: 900px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,12 +61,13 @@ footer{
 }
 
 .jumbotron-brown{
-  background-color: #D6AC97;
+  background-color: white;
 }
 
 .white-container{
   background-color: whitesmoke;
   min-height: 770px;
+
 }
 
 .white-container-small{
@@ -75,7 +76,7 @@ footer{
 }
 
 .dark-container{
-  background-color: #423a3a;
+  background-color: grey;
   border-radius: 10px;
   margin: auto;
   max-height: 700px;

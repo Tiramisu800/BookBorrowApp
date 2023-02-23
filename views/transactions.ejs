@@ -17,8 +17,8 @@
                 <h3>No transactions found.</h3>
             </div>
         <% } else {%>
-        <% for(var i = 0; i < results.length; i++){ %>
-        <%      var transaction = results[i];    %>
+            <% for(var i = 0; i < results.length; i++){ %>
+                <%      var transaction = results[i];    %>
                 <div class="row mx-auto w-75 p-5">
                     <div class="col-7">
                         <h4><%=transaction.book.title%></h4>
@@ -27,13 +27,13 @@
                     </div>
                     <div class="col-5" >
                         <h4>Borrowed by: <%=transaction.user.username%></h4>
-                        <h4>Borrowed by: <%=transaction.user.telegram%></h4>
+                        <h4>Telegram: <%=transaction.user.telegram%></h4>
                         <h4>Borrowed on: <%=transaction.borrowDate%></h4>
-                    <% if(transaction.isReturned === false) {  %>
-                        <h4 class="error">Not Returned</h4>
-                <% } else { %>
+                        <% if(transaction.isReturned === false) {  %>
+                            <h4 class="error">Not Returned</h4>
+                        <% } else { %>
                         <h4>Returned on: <%=transaction.returnDate%></h4>
-                <% } %>
+                        <% } %>
                     </div>
                 </div>
                 <hr/>

@@ -1,32 +1,32 @@
 <%- include("partials/header"); -%>
 
-<div class="jumbotron jumbotron2">
-<div class="dark-container p-5 mt-5">
+<div class="jumbotron jumbotron2 mb-0">
+    <div class="dark-container p-5 mt-5">
 
-<h2 class="text-center text-light display-4">Sign In</h2>
+        <h2 class="text-center text-light display-4 font-weight-bold">Sign In</h2>
 
-<form action="/sign-in" method="post">
+        <form action="/sign-in" method="post">
 
-<div class="text-center ml-auto mr-auto w-75">
-    <h6 class="error"><%=error%></h6>
-    <div class="pt-4 form-group text-left">
-        <h5>Username</h5>
-        <input class="form-control" name="username" placeholder="username" type="text"/>
-    </div>
-    <div class="pt-4 form-group text-left">
-        <h5>Password</h5>
-        <input class="form-control" name="password" placeholder="password" type="password"/>
-    </div>
-    <div class="pt-4 form-group">
-        <button class="btn btn-lg btn-outline-light" name="button" type="submit">Confirm</button>
-    </div>
-    <div class="form-group">
-        <a href="register">Create an Account</a>
-    </div>
-</div>
-</form>
+            <div class="text-center ml-auto mr-auto w-75">
+                <h6 class="error"><%=error%></h6>
+                <div class="pt-4 form-group text-left">
+                    <h5>Username</h5>
+                    <input class="form-control" name="username" placeholder="username" type="text"/>
+                </div>
+                <div class="pt-4 form-group text-left">
+                    <h5>Password</h5>
+                    <input class="form-control" name="password" placeholder="password" type="password"/>
+                </div>
+                <div class="pt-4 form-group">
+                    <button class="btn btn-lg btn-outline-light" name="button" type="submit">Confirm</button>
+                </div>
+                <div class="form-group">
+                    <a href="register">Create an Account</a>
+                </div>
+            </div>
+        </form>
 
-</div>
+    </div>
 </div>
 
 <%- include("partials/footer"); -%>
