@@ -172,7 +172,7 @@ app.post("/search", function(req, res){
 
 /* View Book */
 app.get("/book-info?:bookId", function (req, res){
-    if(currentUser.role === "librarian") res.redirect("/book-edit?bookId=" + req.query.bookId);
+    if(currentUser.role === "admin") res.redirect("/book-edit?bookId=" + req.query.bookId);
     Book.findOne({_id: req.query.bookId}, function(err, book){
         if(book){
             res.render("book-info", {book: book, role: currentUser.role });
