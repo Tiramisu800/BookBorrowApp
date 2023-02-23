@@ -10,7 +10,7 @@
                     <a href="/book-info?bookId=<%= book._id %>" class="col text-left text-dark">
                         <div class="pt-1">Title: <%= book.title %></div>
                         <div class="pt-1">Author: <%= book.author %></div>
-                        <div class="pt-1">Available?: <%= book.isReturned %></div>
+                        <div class="pt-1">Available? <% if(book.isReturned === true){%> yes <%}else{ %> no <% } %></div>
                     </a>
                 </div>
         <% }); %>
